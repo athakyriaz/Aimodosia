@@ -1,0 +1,454 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3A64CCC7-C1B8-4C2F-A5F7-F49DAF8762CD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ptuxiaki</RootNamespace>
+    <AssemblyName>Ptuxiaki</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Nitrah\Desktop\Ptuxiaki\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>Αιμοδοσία</ProductName>
+    <PublisherName>Κυριαζόπουλος Αθανάσιος</PublisherName>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>2079FD1D7CB93A98B45DAF5207765C964E7D6729</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Ptuxiaki_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>1302556144_nurse.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FindByIdSyllogo.cs" />
+    <Compile Include="FormAddAimodosia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddAimodosia.Designer.cs">
+      <DependentUpon>FormAddAimodosia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddSyllogo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddSyllogo.Designer.cs">
+      <DependentUpon>FormAddSyllogo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAimodosiaFullView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAimodosiaFullView.Designer.cs">
+      <DependentUpon>FormAimodosiaFullView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContactMe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContactMe.Designer.cs">
+      <DependentUpon>FormContactMe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDiorthwsiSullogou.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDiorthwsiSullogou.Designer.cs">
+      <DependentUpon>FormDiorthwsiSullogou.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEggrafiAimodoti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEggrafiAimodoti.Designer.cs">
+      <DependentUpon>FormEggrafiAimodoti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEpilogiAimodoti_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEpilogiAimodoti_Edit.Designer.cs">
+      <DependentUpon>FormEpilogiAimodoti_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEpilogiSyllogou.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEpilogiSyllogou.Designer.cs">
+      <DependentUpon>FormEpilogiSyllogou.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFindAimodotiFromMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFindAimodotiFromMain.Designer.cs">
+      <DependentUpon>FormFindAimodotiFromMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFindFialiFromMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFindFialiFromMain.Designer.cs">
+      <DependentUpon>FormFindFialiFromMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFindFialiFromMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFindFialiFromMenu.Designer.cs">
+      <DependentUpon>FormFindFialiFromMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFindSyllogoFromMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFindSyllogoFromMain.Designer.cs">
+      <DependentUpon>FormFindSyllogoFromMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFullViewXrewseis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFullViewXrewseis.Designer.cs">
+      <DependentUpon>FormFullViewXrewseis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFull_aimodotes_view.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFull_aimodotes_view.Designer.cs">
+      <DependentUpon>FormFull_aimodotes_view.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNewXorigisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNewXorigisi.Designer.cs">
+      <DependentUpon>FormNewXorigisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPassword.Designer.cs">
+      <DependentUpon>FormPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSelectHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSelectHistory.Designer.cs">
+      <DependentUpon>FormSelectHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStatisticsView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStatisticsView.Designer.cs">
+      <DependentUpon>FormStatisticsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUpdateAimodoti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUpdateAimodoti.Designer.cs">
+      <DependentUpon>FormUpdateAimodoti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormXorigiseisFullView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormXorigiseisFullView.Designer.cs">
+      <DependentUpon>FormXorigiseisFullView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormXrewshFuallis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormXrewshFuallis.Designer.cs">
+      <DependentUpon>FormXrewshFuallis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Main_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Main_menu.Designer.cs">
+      <DependentUpon>Form_Main_menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FullSyllogoiView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FullSyllogoiView.Designer.cs">
+      <DependentUpon>FullSyllogoiView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HistoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HistoryForm.Designer.cs">
+      <DependentUpon>HistoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HistoryFullView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HistoryFullView.Designer.cs">
+      <DependentUpon>HistoryFullView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PtuxiakiDatabaseDataSet1.cs">
+      <DependentUpon>PtuxiakiDatabaseDataSet1.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PtuxiakiDatabaseDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PtuxiakiDatabaseDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SearchAimodoti%28aimodosia%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchAimodoti%28aimodosia%29.Designer.cs">
+      <DependentUpon>SearchAimodoti%28aimodosia%29.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormAddAimodosia.resx">
+      <DependentUpon>FormAddAimodosia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddSyllogo.resx">
+      <DependentUpon>FormAddSyllogo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAimodosiaFullView.resx">
+      <DependentUpon>FormAimodosiaFullView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContactMe.resx">
+      <DependentUpon>FormContactMe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDiorthwsiSullogou.resx">
+      <DependentUpon>FormDiorthwsiSullogou.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEggrafiAimodoti.resx">
+      <DependentUpon>FormEggrafiAimodoti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEpilogiAimodoti_Edit.resx">
+      <DependentUpon>FormEpilogiAimodoti_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEpilogiSyllogou.resx">
+      <DependentUpon>FormEpilogiSyllogou.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFindAimodotiFromMain.resx">
+      <DependentUpon>FormFindAimodotiFromMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFindFialiFromMain.resx">
+      <DependentUpon>FormFindFialiFromMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFindFialiFromMenu.resx">
+      <DependentUpon>FormFindFialiFromMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFindSyllogoFromMain.resx">
+      <DependentUpon>FormFindSyllogoFromMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFullViewXrewseis.resx">
+      <DependentUpon>FormFullViewXrewseis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFull_aimodotes_view.resx">
+      <DependentUpon>FormFull_aimodotes_view.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNewXorigisi.resx">
+      <DependentUpon>FormNewXorigisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPassword.resx">
+      <DependentUpon>FormPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelectHistory.resx">
+      <DependentUpon>FormSelectHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStatisticsView.resx">
+      <DependentUpon>FormStatisticsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUpdateAimodoti.resx">
+      <DependentUpon>FormUpdateAimodoti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormXorigiseisFullView.resx">
+      <DependentUpon>FormXorigiseisFullView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormXrewshFuallis.resx">
+      <DependentUpon>FormXrewshFuallis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Main_menu.resx">
+      <DependentUpon>Form_Main_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FullSyllogoiView.resx">
+      <DependentUpon>FullSyllogoiView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HistoryForm.resx">
+      <DependentUpon>HistoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HistoryFullView.resx">
+      <DependentUpon>HistoryFullView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SearchAimodoti%28aimodosia%29.resx">
+      <DependentUpon>SearchAimodoti%28aimodosia%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PtuxiakiDatabaseDataSet1.xsc">
+      <DependentUpon>PtuxiakiDatabaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="PtuxiakiDatabaseDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PtuxiakiDatabaseDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PtuxiakiDatabaseDataSet1.xss">
+      <DependentUpon>PtuxiakiDatabaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Ptuxiaki_TemporaryKey.pfx" />
+    <None Include="Resources\1300740398_exit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1300740398_exit1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1300740457_exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1302556144_nurse.ico" />
+    <Content Include="PtuxiakiDatabase.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PtuxiakiDatabase_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>PtuxiakiDatabase.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\1317561048_stop.ico" />
+    <None Include="Resources\1317560958_help-contents.ico" />
+    <None Include="Resources\1317560891_Help.ico" />
+    <None Include="Resources\1317241047_7.ico" />
+    <None Include="Resources\1317240698_10.ico" />
+    <None Include="Resources\1317237432_old-edit-undo.ico" />
+    <None Include="Resources\1317056558_pie_chart.ico" />
+    <None Include="Resources\1317056515_column_chart.ico" />
+    <None Include="Resources\1317056395_Stats.ico" />
+    <None Include="Resources\1316963946_change_password.ico" />
+    <None Include="Resources\search%282%29.ico" />
+    <None Include="Resources\search%281%29.ico" />
+    <None Include="Resources\system_software_update.ico" />
+    <None Include="Resources\1316450423_Orb_minus1.ico" />
+    <None Include="Resources\1315929804_user-group-new1.ico" />
+    <None Include="Resources\1301512519_fileclose1.ico" />
+    <None Include="Resources\search.ico" />
+    <None Include="Resources\1313244897_1.png" />
+    <None Include="Resources\1304616548_ok.ico" />
+    <None Include="Resources\1304615470_edit.ico" />
+    <None Include="Resources\1304356322_folder_updates.ico" />
+    <None Include="Resources\1301942878_binoculars_128.ico" />
+    <None Include="Resources\1301512519_fileclose.ico" />
+    <None Include="Resources\1301510751_success.ico" />
+    <None Include="Resources\1301507896_Windows_Turn_Off.ico" />
+    <None Include="Resources\1301407902_Delete.ico" />
+    <None Include="Resources\1301407580_interact.ico" />
+    <None Include="Resources\1301407111_kde-folder-saved-search.ico" />
+    <None Include="Resources\1301333202_network_delete.ico" />
+    <None Include="Resources\1301333133_delete_user.ico" />
+    <None Include="Resources\Fonto1.png" />
+    <None Include="Resources\Fonto2.png" />
+    <None Include="Resources\1301332334_add-to-favorites.ico" />
+    <None Include="Resources\1301332279_network_add.ico" />
+    <None Include="Resources\1301088225_add_group.ico" />
+    <None Include="Resources\1301088199_network_zoom.ico" />
+    <None Include="Resources\1301088130_system-software-update.ico" />
+    <None Include="Resources\1301087973_Search-Male-User.ico" />
+    <None Include="Resources\1300792367_add.ico" />
+    <None Include="Resources\Fonto.png" />
+    <None Include="Resources\1300790450_3floppy_unmount.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.10.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2008 Express</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
